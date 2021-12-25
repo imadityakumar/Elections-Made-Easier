@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Page</title>
+  <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+
+<body>
+  <style>
+    #address {
+      width: 28%;
+      height: 40px;
+    }
+
+    #imagepart {
+      border: 2px solid black;
+      border-radius: 6px;
+      padding: 5px;
+      width: 30%;
+      text-align: center;
+
+    }
+
+    #selectionpart {
+      border: 2px solid black;
+      border-radius: 6px;
+      width: 28%;
+      text-align: center;
+      padding: 14px;
+
+    }
+  </style>
+
+  <h1>Elections Made Easier</h1>
+  <hr />
+  <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+    <h3>Registration</h3>
+    <input type="text" name="username" placeholder="Name" />
+    <input type="number" name="phonenumber" placeholder="Mobile" />
+    <br /><br />
+    <input type="password" name="pwd" placeholder="Password" />
+    <input type="password" name="Confirmedpwd" placeholder="Confirm password" />
+    <br> <br>
+
+    <input id="address" type="text" name="gharkapata" placeholder="Address">
+    <br><br>
+    <center>
+      <div id="imagepart"> Upload image
+        <br><br>
+
+        <input type="file" name="photo">
+      </div>
+    </center>
+
+    <br>
+    <center>
+      <div id="selectionpart">
+        Select your role: <select name="chunlo">
+          <option value="1">Voter</option>
+          <option value="2">Admin</option>
+        </select>
+      </div>
+    </center>
+    <br><br>
+
+    Already user? <a href="index.html" target="_blank">Click Here</a>
+    <br><br>
+    
+    <button style="padding: 5px;
+    font-size: 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;"
+    >Register</button>
+
+  </form>
+  <br /><br />
+</body>
+
+</html>
