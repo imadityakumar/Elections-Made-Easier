@@ -1,6 +1,6 @@
 body {
-  text-align: center;
-  background-color: #0f110e;
+  text-align: center;  
+  background: linear-gradient(to right, #1de427 0%, #146f72 160%);
 }
 
 #headersection {
